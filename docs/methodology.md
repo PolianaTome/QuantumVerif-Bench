@@ -122,3 +122,14 @@ benchmarks in Step 3 (see also the spike results above):
   falls back to skipping the optional static type-checking pass. This does not
   affect verification and was left as-is rather than adding an extra dependency
   purely to silence a warning.
+- `nondet_float()` + `__ESBMC_assume()` are supported and work for small examples
+  (confirmed in `benchmarks/_spike/spike_nondet_float_assume.py`), but using them to
+  make `benchmarks/teleportation/teleportation.py`'s input qubit fully symbolic
+  (2 nondet floats, normalized via `__ESBMC_assume`) made the Z3 floating-point
+  solving step intractable in practice: two separate runs did not return a verdict
+  after several minutes on a 302-VCC program, whereas the same program with a fixed
+  concrete input state solved in under a second. The benchmark uses a fixed,
+  non-trivial, normalized input state instead, while still using `nondet_bool()` to
+  exhaustively cover Bob's four possible classical-correction branches. This is a
+  solver-performance limitation of this particular nonlinear floating-point problem,
+  not a front-end parsing limitation.
