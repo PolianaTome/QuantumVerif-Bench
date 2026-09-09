@@ -133,3 +133,9 @@ benchmarks in Step 3 (see also the spike results above):
   exhaustively cover Bob's four possible classical-correction branches. This is a
   solver-performance limitation of this particular nonlinear floating-point problem,
   not a front-end parsing limitation.
+- Negating a list element in place, `amp[i] = -amp[i]`, fails with
+  `ERROR: Type inference failed for Assign` (confirmed isolated in
+  `benchmarks/_spike/spike_list_negate.py`), even with a literal index. The
+  workaround `amp[i] = 0.0 - amp[i]` (binary subtraction instead of unary
+  negation) works and is used in `benchmarks/grover_simplified/grover_simplified.py`
+  wherever the oracle needs to flip the sign of one amplitude in place.
