@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "QuantumVerif-Bench: Formal Verification of Quantum Programs in Python with ESBMC"
+abstract: >
+  QuantumVerif-Bench is a PIBITI (UFAM) undergraduate research project on formal
+  verification of quantum programs written in Python, using ESBMC (Efficient
+  SMT-Based Model Checker) to check state normalization, unitary consistency, and
+  measurement validity across a suite of quantum computing benchmarks.
+authors:
+  - family-names: "Tome"
+    given-names: "Poliana Cavalcante"
+    affiliation: "Universidade Federal do Amazonas (UFAM)"
+    orcid: "TODO: add ORCID iD if available"
+  - family-names: "Rodrigues"
+    given-names: "Rosiane de Freitas"
+    affiliation: "Universidade Federal do Amazonas (UFAM)"
+    orcid: "TODO: add ORCID iD if available"
+  - family-names: "Cordeiro"
+    given-names: "Lucas Carvalho"
+    affiliation: "TODO: confirm affiliation to list here"
+    orcid: "TODO: add ORCID iD if available"
+license: MIT
+repository-code: "TODO: add repository URL once the remote is created"
+version: "0.1.0"
+date-released: "TODO: fill in on first tagged release"
+doi: "TODO: add DOI if/when one is minted (e.g. via Zenodo)"
+keywords:
+  - quantum computing
+  - formal verification
+  - bounded model checking
+  - ESBMC
+  - SMT
