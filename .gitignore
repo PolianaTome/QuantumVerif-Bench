@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
+.git-commit-msg.txt
 results/*.log
 results/*.json
 !results/.gitkeep
