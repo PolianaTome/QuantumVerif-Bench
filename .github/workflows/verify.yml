@@ -1,0 +1,48 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest tests/
+
+  # esbmc-verify installs ESBMC via its official PPA (confirmed real and
+  # documented at https://github.com/esbmc/esbmc, supporting Ubuntu 22.04 and
+  # 24.04: `sudo add-apt-repository ppa:esbmc/esbmc && sudo apt update &&
+  # sudo apt install esbmc`) and then runs scripts/run_esbmc.sh on every
+  # benchmark.
+  #
+  # TODO: this job is disabled for now. PPA installs in CI can be slow or
+  # flaky, and this was never actually exercised on a GitHub Actions runner
+  # during development (only in a local WSL2 environment with ESBMC already
+  # installed) — so it should be validated once, timed, and only then
+  # uncommented rather than assumed to work.
+  #
+  # esbmc-verify:
+  #   runs-on: ubuntu-24.04
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-python@v5
+  #       with:
+  #         python-version: "3.12"
+  #     - run: pip install -r requirements.txt
+  #     - name: Install ESBMC from its official PPA
+  #       run: |
+  #         sudo add-apt-repository -y ppa:esbmc/esbmc
+  #         sudo apt update
+  #         sudo apt install -y esbmc
+  #         esbmc --version
+  #     - run: bash scripts/run_esbmc.sh
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: esbmc-results
+  #         path: results/
