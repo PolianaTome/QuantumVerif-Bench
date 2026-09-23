@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ESBMC: Verificar arquivo atual",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/run_esbmc.sh",
+      "args": ["${relativeFile}"],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "new", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "ESBMC: Rodar todos os benchmarks",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/run_esbmc.sh",
+      "group": "test",
+      "presentation": { "reveal": "always", "panel": "new", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}
