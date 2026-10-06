@@ -1,8 +1,8 @@
 # QuantumVerif-Bench
 
 QuantumVerif-Bench is a PIBITI (UFAM) undergraduate research project that applies
-[ESBMC](https://github.com/esbmc/esbmc) — a general-purpose, SV-COMP/Test-COMP
-competitive SMT-based bounded model checker — directly to Python quantum
+[ESBMC](https://github.com/esbmc/esbmc) A general-purpose, SV-COMP/Test-COMP
+competitive SMT-based bounded model checker directly to Python quantum
 programs, checking a small suite of textbook quantum algorithms (Bell state,
 Deutsch's algorithm, quantum teleportation, a Hadamard/CNOT sequence, and a
 simplified Grover search) for state normalization, unitary consistency, and
