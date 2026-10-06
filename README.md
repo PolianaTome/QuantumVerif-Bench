@@ -59,7 +59,7 @@ front-end limitations were found while building these benchmarks.
 
 Automated formal verification of quantum programs via SMT already exists
 (symQV, AutoQ 2.0), so that alone is not this project's contribution. What sets
-QuantumVerif-Bench apart is using a mature, general-purpose verifier — ESBMC,
+QuantumVerif-Bench apart is using a mature, general-purpose verifier ESBMC,
 competitive in SV-COMP/Test-COMP that verifies Python source directly instead
 of a purpose-built circuit DSL, which means the same verification run also
 catches conventional software bugs (division by zero, out-of-bounds indexing,
