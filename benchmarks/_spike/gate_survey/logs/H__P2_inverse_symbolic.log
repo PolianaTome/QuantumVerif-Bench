@@ -1,0 +1,21 @@
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing H__P2_inverse_symbolic.py
+Warning: mypy not found on PATH; type checking will be skipped.
+  Install with: pip install mypy  or  pipx install mypy
+Converting
+Generating GOTO Program
+GOTO program creation time: 3.438s
+GOTO program processing time: 0.043s
+Starting Bounded Model Checking
+Unwinding loop 187 iteration 1   file H__P2_inverse_symbolic.py
+Unwinding loop 187 iteration 2   file H__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 1   file H__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 2   file H__P2_inverse_symbolic.py
+Symex completed in: 0.149s (2650 assignments)
+Caching time: 0.009s (removed 678 assertions)
+Slicing time: 0.032s (removed 1226 assignments)
+Generated 1806 VCC(s), 458 remaining after simplification (746 assignments)
+No solver specified; defaulting to bitwuzla
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.084s
+Solving with solver Bitwuzla 0.9.0

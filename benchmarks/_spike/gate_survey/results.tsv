@@ -1,0 +1,9 @@
+CNOT__P2_inverse_symbolic	SUCCESSFUL	13.8	774	507
+CZ__P1_unitary_concrete	SUCCESSFUL	14.5	5908	406
+CNOT__P1_unitary_concrete	SUCCESSFUL	14.6	5908	406
+CZ__P2_inverse_symbolic	SUCCESSFUL	13.4	774	523
+H__P1_unitary_concrete	SUCCESSFUL	4.3	660	118
+FREDKIN__P2_inverse_symbolic	SUCCESSFUL	31.3	1550	1162
+I__P1_unitary_concrete	SUCCESSFUL	4.6	660	118
+I__P2_inverse_symbolic	SUCCESSFUL	4.9	386	253
+SWAP__P1_unitary_concrete	SUCCESSFUL	12.6	5908	407
