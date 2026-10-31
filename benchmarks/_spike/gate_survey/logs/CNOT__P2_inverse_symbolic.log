@@ -1,0 +1,139 @@
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing CNOT__P2_inverse_symbolic.py
+Warning: mypy not found on PATH; type checking will be skipped.
+  Install with: pip install mypy  or  pipx install mypy
+Converting
+Generating GOTO Program
+GOTO program creation time: 3.236s
+GOTO program processing time: 0.035s
+Starting Bounded Model Checking
+Unwinding loop 187 iteration 1   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 187 iteration 2   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 187 iteration 3   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 187 iteration 4   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 1   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 2   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 3   file CNOT__P2_inverse_symbolic.py
+Unwinding loop 188 iteration 4   file CNOT__P2_inverse_symbolic.py
+Symex completed in: 0.264s (4306 assignments)
+Caching time: 0.015s (removed 1074 assertions)
+Slicing time: 0.049s (removed 1982 assignments)
+Generated 2914 VCC(s), 774 remaining after simplification (1250 assignments)
+No solver specified; defaulting to bitwuzla
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.114s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 9.213s
+BMC program time: 9.670s
+
+** Results:
+  PASSED       [global.assertion.1]                                line   0  uncaught exception
+  PASSED       [global.assertion.2]                                line   0  uncaught exception: IndexError
+  PASSED       [global.assertion.3]                                line   0  uncaught exception: ValueError
+  PASSED       [global.assertion.4]                                line   0  uncaught exception: ZeroDivisionError
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_copy_value
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.1]         line 111  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.1]                    line 111  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_copy_value.array-bounds-violated.1]        line 125  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [__ESBMC_copy_value.array-bounds-violated.2]        line 125  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.2]         line 125  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.2]                    line 125  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.3]         line 127  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.3]                    line 127  dereference failure: Incorrect alignment when accessing data object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_at
+  PASSED       [__ESBMC_list_at.object-out-of-bounds.1]            line 497  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_at.assertion.1]                       line 497  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_at.invalidated-dynamic-object.1]      line 497  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_at.assertion.2]                       line 497  out-of-bounds read in list
+  PASSED       [__ESBMC_list_at.object-out-of-bounds.2]            line 498  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_at.assertion.3]                       line 498  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_at.invalidated-dynamic-object.2]      line 498  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_create
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.1]        line  87  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.1]                   line  87  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.1]  line  87  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.2]        line  88  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.2]                   line  88  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.2]  line  88  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.3]        line  89  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.3]                   line  89  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.3]  line  89  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_push
+  PASSED       [__ESBMC_list_push.object-out-of-bounds.1]          line 183  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_push.assertion.1]                     line 183  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.1]    line 183  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.invalid-pointer-dereference.1]   line 184  dereference failure: invalid pointer
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.2]    line 184  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.2]                     line 185  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalid-pointer-dereference.2]   line 185  dereference failure: invalid pointer
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.3]    line 185  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.3]                     line 186  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalid-pointer-dereference.3]   line 186  dereference failure: invalid pointer
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.4]    line 186  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.4]                     line 187  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalid-pointer-dereference.4]   line 187  dereference failure: invalid pointer
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.5]    line 187  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.object-out-of-bounds.2]          line 188  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_push.assertion.5]                     line 188  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.6]    line 188  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_size
+  PASSED       [__ESBMC_list_size.object-out-of-bounds.1]          line  95  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_size.assertion.1]                     line  95  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_size.invalidated-dynamic-object.1]    line  95  dereference failure: invalidated dynamic object
+CNOT__P2_inverse_symbolic.py
+  PASSED       [global.assertion.5]                                line   0  range() arg 3 must not be zero
+  PASSED       [global.array-bounds-violated.1]                    line   4  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.2]                    line   4  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.6]                                line   4  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.3]                    line   4  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.1]              line   4  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.1]               line   4  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.4]                    line   5  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.5]                    line   5  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.7]                                line   5  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.6]                    line   5  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.2]              line   5  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.2]               line   5  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.7]                    line   8  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.8]                    line   8  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.8]                                line   8  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.9]                    line   8  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.3]              line   8  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.3]               line   8  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.10]                   line   9  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.11]                   line   9  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.9]                                line   9  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.12]                   line   9  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.4]              line   9  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.4]               line   9  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.13]                   line  12  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.14]                   line  12  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.10]                               line  12  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.15]                   line  12  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.5]              line  12  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.5]               line  12  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.16]                   line  13  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.17]                   line  13  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.11]                               line  13  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.18]                   line  13  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.6]              line  13  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.6]               line  13  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.19]                   line  17  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.20]                   line  17  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.12]                               line  17  assertion abs(IEEE_SUB(CNOT__P2_inverse_symbolic.py:17$list_elem_obj$254->type_id == 3529751552447467760 ? float_buf[(signed long int)CNOT__P2_inverse_symbolic.py:17$list_elem_obj$254->float_idx] : (double)(*(signed long int *)CNOT__P2_inverse_symbolic.py:17$list_elem_obj$254->value), CNOT__P2_inverse_symbolic.py:17$list_elem_obj$256->type_id == 3529751552447467760 ? float_buf[(signed long int)CNOT__P2_inverse_symbolic.py:17$list_elem_obj$256->float_idx] : (double)(*(signed long int *)CNOT__P2_inverse_symbolic.py:17$list_elem_obj$256->value))) < 1.000000e-9
+  PASSED       [global.assertion.13]                               line  17  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.21]                   line  17  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.7]              line  17  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.7]               line  17  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.22]                   line  18  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.23]                   line  18  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.14]                               line  18  assertion abs(IEEE_SUB(CNOT__P2_inverse_symbolic.py:18$list_elem_obj$258->type_id == 3529751552447467760 ? float_buf[(signed long int)CNOT__P2_inverse_symbolic.py:18$list_elem_obj$258->float_idx] : (double)(*(signed long int *)CNOT__P2_inverse_symbolic.py:18$list_elem_obj$258->value), CNOT__P2_inverse_symbolic.py:18$list_elem_obj$260->type_id == 3529751552447467760 ? float_buf[(signed long int)CNOT__P2_inverse_symbolic.py:18$list_elem_obj$260->float_idx] : (double)(*(signed long int *)CNOT__P2_inverse_symbolic.py:18$list_elem_obj$260->value))) < 1.000000e-9
+  PASSED       [global.assertion.15]                               line  18  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.24]                   line  18  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.8]              line  18  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.8]               line  18  dereference failure: invalidated dynamic object
+
+** 0 of 99 properties failed, 99 passed
+
+VERIFICATION SUCCESSFUL
+ESBMC version 8.5.0 64-bit x86_64 linux

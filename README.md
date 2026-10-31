@@ -41,6 +41,10 @@ JSON report:
 python3 scripts/collect_counterexamples.py
 ```
 
+For the complete, step-by-step reproduction procedure, expected verification
+statuses, and notes about the GitHub Actions workflow, see
+[Reproducing the results](docs/reproducing-results.md).
+
 ## Benchmarks and properties verified
 
 | Benchmark | Properties verified |

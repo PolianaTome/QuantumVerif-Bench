@@ -1,0 +1,365 @@
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing CZ__P1_unitary_concrete.py
+Warning: mypy not found on PATH; type checking will be skipped.
+  Install with: pip install mypy  or  pipx install mypy
+Converting
+Generating GOTO Program
+GOTO program creation time: 3.871s
+GOTO program processing time: 0.149s
+Starting Bounded Model Checking
+Unwinding loop 187 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 187 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 187 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 187 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 188 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 188 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 188 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 188 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 189 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 189 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 189 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 189 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 190 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 190 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 190 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 190 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 191 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 191 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 191 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 191 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 192 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 192 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 192 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 192 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 193 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 193 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 193 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 193 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 194 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 194 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 194 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 194 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 195 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 195 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 195 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 195 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 196 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 196 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 196 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 196 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 197 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 197 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 197 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 197 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 198 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 198 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 198 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 198 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 199 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 199 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 199 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 199 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 200 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 200 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 200 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 200 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 201 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 201 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 201 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 201 iteration 4   file CZ__P1_unitary_concrete.py
+Unwinding loop 202 iteration 1   file CZ__P1_unitary_concrete.py
+Unwinding loop 202 iteration 2   file CZ__P1_unitary_concrete.py
+Unwinding loop 202 iteration 3   file CZ__P1_unitary_concrete.py
+Unwinding loop 202 iteration 4   file CZ__P1_unitary_concrete.py
+Symex completed in: 8.027s (30022 assignments)
+Caching time: 0.059s (removed 5840 assertions)
+Slicing time: 0.443s (removed 15840 assignments)
+Generated 18708 VCC(s), 5908 remaining after simplification (8342 assignments)
+No solver specified; defaulting to bitwuzla
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.538s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.441s
+BMC program time: 9.536s
+
+** Results:
+  PASSED       [global.assertion.1]                                line   0  uncaught exception
+  PASSED       [global.assertion.2]                                line   0  uncaught exception: IndexError
+  PASSED       [global.assertion.3]                                line   0  uncaught exception: ValueError
+  PASSED       [global.assertion.4]                                line   0  uncaught exception: ZeroDivisionError
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_copy_value
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.1]         line 111  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.1]                    line 111  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_copy_value.array-bounds-violated.1]        line 125  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [__ESBMC_copy_value.array-bounds-violated.2]        line 125  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.2]         line 125  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.2]                    line 125  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_copy_value.object-out-of-bounds.3]         line 127  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_copy_value.assertion.3]                    line 127  dereference failure: Incorrect alignment when accessing data object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_at
+  PASSED       [__ESBMC_list_at.object-out-of-bounds.1]            line 497  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_at.assertion.1]                       line 497  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_at.invalidated-dynamic-object.1]      line 497  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_at.assertion.2]                       line 497  out-of-bounds read in list
+  PASSED       [__ESBMC_list_at.object-out-of-bounds.2]            line 498  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_at.assertion.3]                       line 498  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_at.invalidated-dynamic-object.2]      line 498  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_create
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.1]        line  87  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.1]                   line  87  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.1]  line  87  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.2]        line  88  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.2]                   line  88  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.2]  line  88  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_create.object-out-of-bounds.3]        line  89  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_create.assertion.3]                   line  89  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_create.invalidated-dynamic-object.3]  line  89  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_push
+  PASSED       [__ESBMC_list_push.object-out-of-bounds.1]          line 183  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_push.assertion.1]                     line 183  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.1]    line 183  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.2]    line 184  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.2]                     line 185  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.3]    line 185  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.3]                     line 186  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.4]    line 186  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.assertion.4]                     line 187  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.5]    line 187  dereference failure: invalidated dynamic object
+  PASSED       [__ESBMC_list_push.object-out-of-bounds.2]          line 188  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_push.assertion.5]                     line 188  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_push.invalidated-dynamic-object.6]    line 188  dereference failure: invalidated dynamic object
+/home/runner/work/esbmc/esbmc/src/c2goto/library/python/list.c, function __ESBMC_list_size
+  PASSED       [__ESBMC_list_size.object-out-of-bounds.1]          line  95  dereference failure: Access to object out of bounds
+  PASSED       [__ESBMC_list_size.assertion.1]                     line  95  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [__ESBMC_list_size.invalidated-dynamic-object.1]    line  95  dereference failure: invalidated dynamic object
+CZ__P1_unitary_concrete.py
+  PASSED       [global.assertion.5]                                line   0  range() arg 3 must not be zero
+  PASSED       [global.array-bounds-violated.1]                    line  36  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.2]                    line  36  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.6]                                line  36  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.3]                    line  36  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.1]              line  36  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.1]               line  36  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.4]                    line  37  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.5]                    line  37  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.7]                                line  37  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.6]                    line  37  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.2]              line  37  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.2]               line  37  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.8]                                line  38  assertion abs(IEEE_SUB(dr, 1.000000)) < 1.000000e-9
+  PASSED       [global.assertion.9]                                line  39  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.7]                    line  43  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.8]                    line  43  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.10]                               line  43  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.9]                    line  43  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.3]              line  43  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.3]               line  43  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.10]                   line  44  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.11]                   line  44  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.11]                               line  44  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.12]                   line  44  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.4]              line  44  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.4]               line  44  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.12]                               line  45  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.13]                               line  46  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.13]                   line  50  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.14]                   line  50  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.14]                               line  50  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.15]                   line  50  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.5]              line  50  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.5]               line  50  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.16]                   line  51  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.17]                   line  51  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.15]                               line  51  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.18]                   line  51  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.6]              line  51  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.6]               line  51  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.16]                               line  52  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.17]                               line  53  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.19]                   line  57  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.20]                   line  57  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.18]                               line  57  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.21]                   line  57  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.7]              line  57  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.7]               line  57  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.22]                   line  58  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.23]                   line  58  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.19]                               line  58  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.24]                   line  58  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.8]              line  58  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.8]               line  58  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.20]                               line  59  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.21]                               line  60  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.25]                   line  64  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.26]                   line  64  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.22]                               line  64  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.27]                   line  64  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.9]              line  64  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.9]               line  64  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.28]                   line  65  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.29]                   line  65  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.23]                               line  65  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.30]                   line  65  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.10]             line  65  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.10]              line  65  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.24]                               line  66  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.25]                               line  67  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.31]                   line  71  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.32]                   line  71  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.26]                               line  71  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.33]                   line  71  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.11]             line  71  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.11]              line  71  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.34]                   line  72  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.35]                   line  72  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.27]                               line  72  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.36]                   line  72  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.12]             line  72  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.12]              line  72  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.28]                               line  73  assertion abs(IEEE_SUB(dr, 1.000000)) < 1.000000e-9
+  PASSED       [global.assertion.29]                               line  74  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.37]                   line  78  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.38]                   line  78  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.30]                               line  78  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.39]                   line  78  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.13]             line  78  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.13]              line  78  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.40]                   line  79  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.41]                   line  79  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.31]                               line  79  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.42]                   line  79  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.14]             line  79  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.14]              line  79  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.32]                               line  80  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.33]                               line  81  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.43]                   line  85  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.44]                   line  85  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.34]                               line  85  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.45]                   line  85  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.15]             line  85  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.15]              line  85  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.46]                   line  86  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.47]                   line  86  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.35]                               line  86  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.48]                   line  86  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.16]             line  86  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.16]              line  86  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.36]                               line  87  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.37]                               line  88  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.49]                   line  92  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.50]                   line  92  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.38]                               line  92  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.51]                   line  92  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.17]             line  92  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.17]              line  92  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.52]                   line  93  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.53]                   line  93  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.39]                               line  93  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.54]                   line  93  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.18]             line  93  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.18]              line  93  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.40]                               line  94  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.41]                               line  95  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.55]                   line  99  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.56]                   line  99  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.42]                               line  99  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.57]                   line  99  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.19]             line  99  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.19]              line  99  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.58]                   line 100  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.59]                   line 100  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.43]                               line 100  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.60]                   line 100  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.20]             line 100  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.20]              line 100  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.44]                               line 101  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.45]                               line 102  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.61]                   line 106  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.62]                   line 106  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.46]                               line 106  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.63]                   line 106  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.21]             line 106  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.21]              line 106  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.64]                   line 107  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.65]                   line 107  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.47]                               line 107  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.66]                   line 107  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.22]             line 107  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.22]              line 107  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.48]                               line 108  assertion abs(IEEE_SUB(dr, 1.000000)) < 1.000000e-9
+  PASSED       [global.assertion.49]                               line 109  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.67]                   line 113  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.68]                   line 113  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.50]                               line 113  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.69]                   line 113  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.23]             line 113  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.23]              line 113  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.70]                   line 114  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.71]                   line 114  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.51]                               line 114  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.72]                   line 114  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.24]             line 114  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.24]              line 114  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.52]                               line 115  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.53]                               line 116  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.73]                   line 120  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.74]                   line 120  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.54]                               line 120  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.75]                   line 120  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.25]             line 120  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.25]              line 120  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.76]                   line 121  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.77]                   line 121  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.55]                               line 121  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.78]                   line 121  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.26]             line 121  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.26]              line 121  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.56]                               line 122  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.57]                               line 123  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.79]                   line 127  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.80]                   line 127  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.58]                               line 127  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.81]                   line 127  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.27]             line 127  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.27]              line 127  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.82]                   line 128  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.83]                   line 128  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.59]                               line 128  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.84]                   line 128  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.28]             line 128  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.28]              line 128  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.60]                               line 129  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.61]                               line 130  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.85]                   line 134  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.86]                   line 134  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.62]                               line 134  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.87]                   line 134  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.29]             line 134  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.29]              line 134  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.88]                   line 135  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.89]                   line 135  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.63]                               line 135  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.90]                   line 135  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.30]             line 135  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.30]              line 135  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.64]                               line 136  assertion abs(IEEE_SUB(dr, 0.000000)) < 1.000000e-9
+  PASSED       [global.assertion.65]                               line 137  assertion abs(di) < 1.000000e-9
+  PASSED       [global.array-bounds-violated.91]                   line 141  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.92]                   line 141  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.66]                               line 141  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.93]                   line 141  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.31]             line 141  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.31]              line 141  dereference failure: invalidated dynamic object
+  PASSED       [global.array-bounds-violated.94]                   line 142  array bounds violated: array `__ESBMC_float_buf' lower bound
+  PASSED       [global.array-bounds-violated.95]                   line 142  array bounds violated: array `__ESBMC_float_buf' upper bound
+  PASSED       [global.assertion.67]                               line 142  dereference failure: Incorrect alignment when accessing data object
+  PASSED       [global.array-bounds-violated.96]                   line 142  dereference failure: array bounds violated
+  PASSED       [global.invalid-pointer-dereference.32]             line 142  dereference failure: invalid pointer
+  PASSED       [global.invalidated-dynamic-object.32]              line 142  dereference failure: invalidated dynamic object
+  PASSED       [global.assertion.68]                               line 143  assertion abs(IEEE_SUB(dr, 1.000000)) < 1.000000e-9
+  PASSED       [global.assertion.69]                               line 144  assertion abs(di) < 1.000000e-9
+
+** 0 of 269 properties failed, 269 passed
+
+VERIFICATION SUCCESSFUL
+ESBMC version 8.5.0 64-bit x86_64 linux

@@ -1,3 +1,6 @@
+# Ponto de entrada do CI: roda os smoke tests rápidos (sem ESBMC) a cada
+# push e pull request. A verificação formal com o ESBMC em si AINDA NÃO
+# roda no CI (veja o job esbmc-verify desabilitado abaixo).
 name: verify
 
 on:
@@ -5,6 +8,8 @@ on:
   pull_request:
 
 jobs:
+  # Executa cada benchmark com o CPython puro (tests/test_smoke.py) para
+  # pegar erros básicos rapidamente, sem instalar nem chamar o ESBMC.
   smoke-test:
     runs-on: ubuntu-24.04
     steps:
@@ -15,17 +20,17 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pytest tests/
 
-  # esbmc-verify installs ESBMC via its official PPA (confirmed real and
-  # documented at https://github.com/esbmc/esbmc, supporting Ubuntu 22.04 and
-  # 24.04: `sudo add-apt-repository ppa:esbmc/esbmc && sudo apt update &&
-  # sudo apt install esbmc`) and then runs scripts/run_esbmc.sh on every
-  # benchmark.
+  # esbmc-verify instala o ESBMC via seu PPA oficial (confirmado real e
+  # documentado em https://github.com/esbmc/esbmc, com suporte a Ubuntu
+  # 22.04 e 24.04: `sudo add-apt-repository ppa:esbmc/esbmc && sudo apt
+  # update && sudo apt install esbmc`) e depois roda scripts/run_esbmc.sh em
+  # cada benchmark.
   #
-  # TODO: this job is disabled for now. PPA installs in CI can be slow or
-  # flaky, and this was never actually exercised on a GitHub Actions runner
-  # during development (only in a local WSL2 environment with ESBMC already
-  # installed) — so it should be validated once, timed, and only then
-  # uncommented rather than assumed to work.
+  # TODO: este job está desabilitado por enquanto. Instalações via PPA no CI
+  # podem ser lentas ou instáveis, e isso nunca foi de fato testado em um
+  # runner do GitHub Actions durante o desenvolvimento (só em um ambiente
+  # local WSL2 com o ESBMC já instalado) -- então deve ser validado uma vez,
+  # cronometrado, e só então descomentado em vez de assumido como funcional.
   #
   # esbmc-verify:
   #   runs-on: ubuntu-24.04

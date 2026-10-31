@@ -44,8 +44,8 @@ the ESBMC version you used (`esbmc --version`).
 
 ## Code style
 
-- Benchmark code, scripts, and documentation (outside of `docs/weekly-logs/`)
-  are written in English.
-- No unnecessary comments — only comment on non-obvious *why*, not *what*.
+- Code comments and docstrings are written in Portuguese (PT-BR). Prose
+  documentation under `docs/` and this file are also in Portuguese;
+  identifiers (variable/function names) stay in English.
 - Keep benchmarks minimal: don't add abstractions or generality the
   verification target doesn't need.
